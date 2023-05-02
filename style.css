@@ -29,21 +29,39 @@ main {
 	align-items: center;
 }
 
-form {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+#websites-tree {
 	margin-top: 2rem;
 	padding: 1rem;
 	background-color: #eee;
 	border: solid 1px #ccc;
-	
 }
 
-form label {
+#websites-tree li {
+	margin-left: 1rem;
+}
+
+#websites-tree a {
+	color: #333;
+	text-decoration: none;
+}
+
+#websites-tree a:hover {
+	text-decoration: underline;
+}
+
+#add-item-form {
+	margin-top: 2rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#add-item-form fieldset {
+	border: none;
+	margin-bottom: 1rem;
+}
+
+#add-item-form legend {
+	font-weight: bold;
 	margin-bottom: 0.5rem;
-}
-
-form input[type="submit"] {
-	margin-top: 1rem;
 }
