@@ -6,31 +6,21 @@
 	<link href="style.css" rel="stylesheet">
 </head>
 <body>
-	<header>
-		<h1>网址导航</h1>
-        <button id="new-folder-btn">新建文件夹</button>
-	</header>
-	
-	<main>
-        <!-- 用于展示目录树和网址列表 -->
-        <div id="directory-tree">
-            <!-- 这里通过 JavaScript 动态添加目录节点和网址节点 -->
-        </div>
-        
-        <div id="website-list">
-            <!-- 这里根据目录切换动态显示不同目录下的网址列表 -->
-        </div>
-        
-        <!-- 表单，用于添加新网址 -->
-		<form id="add-website-form">
-			<label for="website-url">网址</label>
-			<input type="url" id="website-url" required>
-			<label for="website-name">网站名称</label>
-			<input type="text" id="website-name" required>
-			<input type="hidden" id="website-path">
-			<input type="submit" value="添加">
-		</form>
-	</main>
+  <div class="container">
+    <div class="header">导航</div>
+    <div class="sidebar">
+      <button id="new-folder">新建文件夹</button>
+      <ul id="folder-list">
+        <!-- 文件夹列表 -->
+      </ul>
+    </div>
+    <div class="main">
+      <button id="new-url">添加网址</button>
+      <ul id="url-list">
+        <!-- 网址列表 -->
+      </ul>
+    </div>
+  </div>
 	
 	<footer>
 		<p>版权 ©️ 哆啦·A琪</p>
