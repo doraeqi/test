@@ -25,43 +25,28 @@ footer {
 main {
 	margin-top: 2rem;
 	display: flex;
-	flex-direction: column;
-	align-items: center;
 }
 
-#websites-tree {
-	margin-top: 2rem;
-	padding: 1rem;
-	background-color: #eee;
-	border: solid 1px #ccc;
+#directory-tree {
+    flex-basis: 25%;
+    padding: 1rem;
+    background-color: #eee;
+    border: solid 1px #ccc;
 }
 
-#websites-tree li {
-	margin-left: 1rem;
+#directory-tree ul {
+    margin-left: 1rem;
 }
 
-#websites-tree a {
-	color: #333;
-	text-decoration: none;
+#directory-tree a {
+    display: inline-block;
+    margin-right: 0.5rem;
+    color: #333;
+    text-decoration: none;
 }
 
-#websites-tree a:hover {
-	text-decoration: underline;
+#directory-tree a:hover {
+    text-decoration: underline;
 }
 
-#add-item-form {
-	margin-top: 2rem;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
-
-#add-item-form fieldset {
-	border: none;
-	margin-bottom: 1rem;
-}
-
-#add-item-form legend {
-	font-weight: bold;
-	margin-bottom: 0.5rem;
-}
+#website-list
