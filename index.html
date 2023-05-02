@@ -8,33 +8,27 @@
 <body>
 	<header>
 		<h1>网址导航</h1>
+        <button id="new-folder-btn">新建文件夹</button>
 	</header>
 	
 	<main>
-		<!-- 用于展示网址目录树 -->
-		<div id="websites-tree">
-			<!-- 这里通过 JavaScript 动态添加目录节点和网址节点 -->
-		</div>
-		
-		<!-- 表单，用于添加新目录或网址 -->
-		<form id="add-item-form">
-			<fieldset>
-				<legend>添加新目录</legend>
-				<label for="dir-name">目录名称</label>
-				<input type="text" id="dir-name" required>
-				<input type="hidden" id="dir-path" value="/">
-				<input type="submit" value="添加">
-			</fieldset>
-			
-			<fieldset>
-				<legend>添加新网址</legend>
-				<label for="website-url">网址</label>
-				<input type="url" id="website-url" required>
-				<label for="website-name">网站名称</label>
-				<input type="text" id="website-name" required>
-				<input type="hidden" id="website-path" value="/">
-				<input type="submit" value="添加">
-			</fieldset>
+        <!-- 用于展示目录树和网址列表 -->
+        <div id="directory-tree">
+            <!-- 这里通过 JavaScript 动态添加目录节点和网址节点 -->
+        </div>
+        
+        <div id="website-list">
+            <!-- 这里根据目录切换动态显示不同目录下的网址列表 -->
+        </div>
+        
+        <!-- 表单，用于添加新网址 -->
+		<form id="add-website-form">
+			<label for="website-url">网址</label>
+			<input type="url" id="website-url" required>
+			<label for="website-name">网站名称</label>
+			<input type="text" id="website-name" required>
+			<input type="hidden" id="website-path">
+			<input type="submit" value="添加">
 		</form>
 	</main>
 	
