@@ -4,7 +4,6 @@
 	<meta charset="UTF-8">
 	<title>网址导航</title>
 	<link href="style.css" rel="stylesheet">
-
 </head>
 <body>
 	<header>
@@ -12,23 +11,35 @@
 	</header>
 	
 	<main>
-		<!-- 用于展示储存的网址的列表 -->
-		<ul id="websites-list">
-			<!-- 这里可以通过 JavaScript 动态添加列表项 -->
-		</ul>
+		<!-- 用于展示网址目录树 -->
+		<div id="websites-tree">
+			<!-- 这里通过 JavaScript 动态添加目录节点和网址节点 -->
+		</div>
 		
-		<!-- 表单，用于添加新网址 -->
-		<form id="add-website-form">
-			<label for="website-url">网址</label>
-			<input type="url" id="website-url" required>
-			<label for="website-name">网站名称</label>
-			<input type="text" id="website-name" required>
-			<input type="submit" value="添加">
+		<!-- 表单，用于添加新目录或网址 -->
+		<form id="add-item-form">
+			<fieldset>
+				<legend>添加新目录</legend>
+				<label for="dir-name">目录名称</label>
+				<input type="text" id="dir-name" required>
+				<input type="hidden" id="dir-path" value="/">
+				<input type="submit" value="添加">
+			</fieldset>
+			
+			<fieldset>
+				<legend>添加新网址</legend>
+				<label for="website-url">网址</label>
+				<input type="url" id="website-url" required>
+				<label for="website-name">网站名称</label>
+				<input type="text" id="website-name" required>
+				<input type="hidden" id="website-path" value="/">
+				<input type="submit" value="添加">
+			</fieldset>
 		</form>
 	</main>
 	
 	<footer>
-		<p>版权 ©️ 2021 网址导航</p>
+		<p>版权 ©️ 哆啦·A琪</p>
 	</footer>
 	
 	<script src="app.js"></script>
