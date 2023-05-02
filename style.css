@@ -1,52 +1,75 @@
-/* 可以根据个人喜好自行修改样式 */
-body {
-	margin: 0;
-	padding: 0;
-	font-family: Arial, sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-header {
-	background-color: #333;
-	color: #fff;
-	padding: 1rem;
+.container {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
 }
-
-footer {
-	background-color: #333;
-	color: #fff;
-	padding: 1rem;
-	text-align: center;
-	position: fixed;
-	bottom: 0;
-	left: 0;
-	right: 0;
+.header {
+  width: 100%;
+  font-size: 24px;
+  text-align: center;
+  padding: 1rem;
+  background-color: #f2f2f2;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 }
-
-main {
-	margin-top: 2rem;
-	display: flex;
+.sidebar {
+  width: 200px;
+  height: 100%;
+  border-right: 1px solid #ddd;
+  padding: 1rem;
 }
-
-#directory-tree {
-    flex-basis: 25%;
-    padding: 1rem;
-    background-color: #eee;
-    border: solid 1px #ccc;
+.sidebar button {
+  display: block;
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
 }
-
-#directory-tree ul {
-    margin-left: 1rem;
+.sidebar button:hover {
+  background-color: #ddd;
 }
-
-#directory-tree a {
-    display: inline-block;
-    margin-right: 0.5rem;
-    color: #333;
-    text-decoration: none;
+.sidebar ul {
+  list-style: none;
+  margin-top: 1rem;
 }
-
-#directory-tree a:hover {
-    text-decoration: underline;
+.sidebar li {
+  margin-bottom: 1rem;
 }
-
-#website-list
+.main {
+  flex-grow: 1;
+  padding: 1rem;
+}
+.main button {
+  padding: 0.5rem;
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+.main button:hover {
+  background-color: #ddd;
+}
+.main ul {
+  list-style: none;
+  margin-top: 1rem;
+}
+.main li {
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+.main .btn-group {
+  display: flex;
+}
+.main .btn-group button {
+  margin-left: 0.5rem;
+}
